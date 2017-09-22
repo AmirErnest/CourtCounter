@@ -1,0 +1,87 @@
+<resources>
+
+<!-- Base application theme. -->
+<style name="AppTheme" parent="Theme.AppCompat.Light">
+    <!-- Primary theme color of the app (sets background color of app bar) -->
+    <item name="colorPrimary">#01579b</item>
+    <!-- Primary dark theme color of the app (sets color of status bar) -->
+    <item name="colorPrimaryDark">#1565c0</item>
+    <!-- Background color of buttons in the app -->
+    <item name="colorButtonNormal"> #2196f3</item>
+</style>
+
+<style name = "Teams" parent="@android:style/TextAppearance.Large">
+    <item name="android:layout_height"> wrap_content </item>
+    <item name="android:layout_width"> match_parent </item>
+    <item name="android:textColor"> #616161 </item>
+    <item name="android:textSize"> 24sp </item>
+    <item name="android:textStyle"> bold </item>
+    <item name="android:layout_marginBottom"> 16dp </item>
+    <item name="android:layout_marginTop"> 16dp </item>
+    <item name="android:padding"> 4dp </item>
+    <item name="android:gravity"> center_horizontal </item>
+
+</style>
+
+    <style name = "Score" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:textColor"> #000000 </item>
+        <item name="android:textSize"> 56sp </item>
+        <item name="android:textStyle"> bold </item>
+        <item name="android:layout_marginBottom"> 24dp </item>
+        <item name="android:padding"> 4dp </item>
+        <item name="android:gravity"> center_horizontal </item>
+
+    </style>
+
+    <style name = "Button" parent="@android:style/TextAppearance.Medium">
+    <item name="android:layout_height"> wrap_content </item>
+    <item name="android:layout_width"> match_parent </item>
+    <item name="android:layout_marginBottom"> 8dp </item>
+    <item name="android:layout_marginLeft"> 24dp </item>
+    <item name="android:layout_marginRight"> 24dp </item>
+        <item name="android:textAllCaps"> false </item>
+
+</style>
+
+    <style name = "freeThrow" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:layout_marginLeft"> 24dp </item>
+        <item name="android:layout_marginRight"> 24dp </item>
+        <item name="android:paddingLeft"> 24dp </item>
+        <item name="android:paddingRight"> 24dp </item>
+
+    </style>
+
+    <style name = "resetButton" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_width"> wrap_content </item>
+        <item name="android:layout_marginLeft"> 22dp </item>
+        <item name="android:layout_marginRight"> 22dp </item>
+        <item name="android:layout_marginBottom"> 8dp </item>
+        <item name="android:layout_alignParentBottom"> true </item>
+        <item name="android:layout_centerHorizontal"> true </item>
+
+    </style>
+
+    <style name = "cards" parent="@android:style/TextAppearance.Large">
+    <item name="android:layout_height"> wrap_content </item>
+    <item name="android:layout_width"> wrap_content </item>
+    <item name="android:textColor"> #000000 </item>
+    <item name="android:textSize"> 36sp </item>
+    <item name="android:textStyle"> bold </item>
+    <item name="android:layout_marginBottom"> 8dp </item>
+    <item name="android:padding"> 4dp </item>
+    <item name="android:gravity"> center_horizontal </item>
+    </style>
+
+    <style name="imageButton">
+        <item name="android:background"> #FFFFFF </item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height"> 140dp </item>
+    </style>
+
+
+</resources>

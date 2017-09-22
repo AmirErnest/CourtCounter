@@ -1,0 +1,186 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/activity_main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context="com.example.android.courtcounter.MainActivity">
+
+                <TextView
+                    android:id="@+id/team_A_View"
+                    style="@style/Teams"
+                    android:text="Team A" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/Score"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/Button"
+                    android:onClick="goalA"
+                    android:text="Goal !" />
+
+                <TextView
+                    android:id="@+id/team_a_foul"
+                    style="@style/Score"
+                    android:text="0" />
+
+                <Button
+                    style="@style/Button"
+                    android:onClick="foulA"
+                    android:text="Foul !" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/team_a_yellowCard"
+                        style="@style/cards"
+                        android:layout_alignParentLeft="true"
+                        android:text="0" />
+
+
+                    <ImageButton
+                        android:id="@+id/yellowCardA"
+                        style="@style/imageButton"
+                        android:layout_below="@+id/team_a_yellowCard"
+                        android:onClick="yellowCardA"
+                        android:src="@drawable/yellow_card" />
+
+                    <TextView
+                        android:id="@+id/team_a_redCard"
+                        style="@style/cards"
+                        android:layout_alignParentRight="true"
+                        android:text="0" />
+
+                    <ImageButton
+                        android:id="@+id/redCardA"
+                        style="@style/imageButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/team_a_redCard"
+                        android:onClick="redCardA"
+                        android:src="@drawable/red_card" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context="com.example.android.courtcounter.MainActivity">
+
+                <TextView
+                    android:id="@+id/team_B_View"
+                    style="@style/Teams"
+                    android:text="Team B" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/Score"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/Button"
+                    android:onClick="goalB"
+                    android:text="Goal !" />
+
+                <TextView
+                    android:id="@+id/team_b_foul"
+                    style="@style/Score"
+                    android:text="0" />
+
+                <Button
+                    style="@style/Button"
+                    android:onClick="foulB"
+                    android:text="Foul !" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/team_b_yellowCard"
+                        style="@style/cards"
+                        android:layout_alignParentLeft="true"
+                        android:text="0" />
+
+
+                    <ImageButton
+                        android:id="@+id/yellowCardB"
+                        style="@style/imageButton"
+                        android:layout_below="@+id/team_b_yellowCard"
+                        android:onClick="yellowCardB"
+                        android:src="@drawable/yellow_card" />
+
+                    <TextView
+                        android:id="@+id/team_b_redCard"
+                        style="@style/cards"
+                        android:layout_alignParentRight="true"
+                        android:text="0" />
+
+                    <ImageButton
+                        android:id="@+id/redCardB"
+                        style="@style/imageButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/team_b_redCard"
+                        android:onClick="redCardB"
+                        android:src="@drawable/red_card" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/resetButton"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:onClick="resetScore"
+            android:text="Reset" />
+
+    </RelativeLayout>
+
+
+</ScrollView>
